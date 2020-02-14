@@ -1,0 +1,21 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+img {
+  width: 450px;
+  height: 300px;
+  filter: contrast(0%);
+}
+
+img:hover {
+  filter: contrast(100%);
+}
+
+.picsum-img-wrapper {
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+}

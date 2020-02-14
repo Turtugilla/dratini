@@ -1,0 +1,44 @@
+.card-auto {
+  height: 200px;
+  background-color: rgb(50, 130, 184, 0.2);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(50, 130, 184, 0.7);
+  border-radius: 10px;
+}
+
+.card-auto .item {
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.card-auto .item-marca,
+.card-auto .item-submarca {
+  font-size: 3em;
+  text-transform: capitalize;
+}
+
+@media (max-width: 700px) {
+  .card-auto .item-marca,
+  .card-auto .item-submarca {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .card-auto .item-marca,
+  .card-auto .item-submarca {
+    font-size: 1em;
+  }
+}
+
+.card-auto .item-img {
+  width: 200px;
+  margin: 5px;
+}
+
+.card-auto .item-marca {
+  margin-right: 10px;
+}

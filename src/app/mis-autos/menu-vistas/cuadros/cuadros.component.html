@@ -1,0 +1,14 @@
+<div class="container-dratini">
+  <ng-container *ngFor="let auto of autos">
+    <div class="card-cuadro">
+      <header>{{ auto.submarca }} - {{ auto.marca }}</header>
+      <img
+        class="item item-img"
+        src="/assets/images/autos/{{ auto.submarca }}.png"
+        alt=""
+        #img
+        (error)="setImageOnError(img)"
+      />
+    </div>
+  </ng-container>
+</div>

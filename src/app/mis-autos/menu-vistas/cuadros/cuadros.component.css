@@ -1,0 +1,37 @@
+.container-dratini {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container-dratini .card-cuadro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(50, 130, 184, 0.2);
+  width: 250px;
+  height: 250px;
+  margin: 15px;
+  border: 1px solid rgb(50, 130, 184, 0.7);
+  box-shadow: -1px 8px 10px -1px #0f4c75;
+  border-radius: 2em;
+}
+
+.container-dratini .card-cuadro img {
+  width: 250px;
+  margin: 50px;
+  background: linear-gradient(to bottom, #a0ceed 0%, #163951 53%, #a0ceed 100%);
+  border-radius: 1em;
+}
+
+.container-dratini .card-cuadro header {
+  border-top: 1px solid rgb(50, 130, 184);
+  border-radius: 2em 2em 0px 0px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #0f4c75;
+}

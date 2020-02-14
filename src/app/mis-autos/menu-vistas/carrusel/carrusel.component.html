@@ -1,0 +1,17 @@
+<ngb-carousel *ngIf="autos">
+  <ng-container *ngFor="let auto of autos">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          src="/assets/images/autos/{{ auto.submarca }}.png"
+          alt=""
+          #img
+          (error)="setImageOnError(img)"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>{{ auto.submarca }} - {{ auto.marca }}</h3>
+      </div>
+    </ng-template>
+  </ng-container>
+</ngb-carousel>

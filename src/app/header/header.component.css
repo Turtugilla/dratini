@@ -1,0 +1,10 @@
+header a img {
+  width: 100px;
+  margin: 15px;
+}
+
+.container-dratini {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f4c75;
+}

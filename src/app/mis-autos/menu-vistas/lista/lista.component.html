@@ -1,0 +1,13 @@
+<ng-container *ngFor="let auto of autos">
+  <div class="card-auto">
+    <img
+      class="item item-img"
+      src="/assets/images/autos/{{ auto.submarca }}.png"
+      alt=""
+      #img
+      (error)="setImageOnError(img)"
+    />
+    <div class="item item-submarca">{{ auto.submarca }}</div>
+    <div class="item item-marca">{{ auto.marca }}</div>
+  </div>
+</ng-container>
