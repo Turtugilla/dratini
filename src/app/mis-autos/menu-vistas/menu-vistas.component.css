@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
-
 .container-dratini {
   display: flex;
 }
@@ -9,15 +7,20 @@ nav a {
   padding: 15px;
   width: 100%;
   text-align: center;
-  font-family: "Neucha", cursive;
   color: white;
   border: 1px solid #0f4c75;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 nav a:hover {
   background-color: rgb(50, 130, 184, 0.8);
   cursor: pointer;
+}
+
+nav a.active {
+  text-shadow: 0 0 10px #165781;
+  color: rgb(252, 104, 104);
 }

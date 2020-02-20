@@ -2,36 +2,70 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  box-sizing: unset;
 }
 
 .container-dratini .card-cuadro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(50, 130, 184, 0.2);
-  width: 250px;
-  height: 250px;
-  margin: 15px;
-  border: 1px solid rgb(50, 130, 184, 0.7);
+  background-color: whitesmoke;
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  border: 2px solid rgba(23, 23, 24, 0.7);
   box-shadow: -1px 8px 10px -1px #0f4c75;
   border-radius: 2em;
 }
 
-.container-dratini .card-cuadro img {
-  width: 250px;
-  margin: 50px;
-  background: linear-gradient(to bottom, #a0ceed 0%, #163951 53%, #a0ceed 100%);
-  border-radius: 1em;
+.container-dratini .card-cuadro:hover {
 }
 
 .container-dratini .card-cuadro header {
-  border-top: 1px solid rgb(50, 130, 184);
   border-radius: 2em 2em 0px 0px;
   width: 100%;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: whitesmoke;
-  font-weight: bold;
   background-color: #0f4c75;
+}
+
+.container-dratini .card-cuadro .info-auto {
+  overflow: hidden;
+  top: 214px;
+  background-color: whitesmoke;
+  color: black;
+  width: 260px;
+  height: 226px;
+  border-radius: 0px 0px 2em 2em;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-name: slide-text;
+}
+
+@keyframes slide-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opactiy: 1;
+  }
+}
+
+.container-dratini .card-cuadro img {
+  position: absolute;
+  width: 250px;
+  margin: 50px;
+  background: linear-gradient(
+    to bottom,
+    whitesmoke 0%,
+    #a0ceed 45%,
+    whitesmoke 100%
+  );
+  border-radius: 1em;
 }

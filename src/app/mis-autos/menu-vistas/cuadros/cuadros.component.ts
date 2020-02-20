@@ -9,9 +9,18 @@ import { AUTOS } from "src/app/data/data";
 export class CuadrosComponent implements OnInit {
   autos: any;
   constructor() {}
-
   ngOnInit() {
     this.autos = AUTOS;
+  }
+
+  onMouseOver(cardCuadroTag) {
+    cardCuadroTag.children["2"].style.display = "none";
+    cardCuadroTag.children["1"].style.display = "block";
+  }
+
+  onMouseOut(cardCuadroTag) {
+    cardCuadroTag.children["2"].style.display = "block";
+    cardCuadroTag.children["1"].style.display = "none";
   }
 
   setImageOnError(img) {

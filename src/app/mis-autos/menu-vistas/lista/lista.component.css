@@ -1,11 +1,11 @@
 .card-auto {
   height: 200px;
-  background-color: rgb(50, 130, 184, 0.2);
   margin: 10px;
   display: flex;
+  background-color: rgb(241, 239, 239);
   align-items: center;
   justify-content: space-between;
-  border: 1px solid rgb(50, 130, 184, 0.7);
+  border: 1px solid rgba(50, 130, 184, 0.178);
   border-radius: 10px;
 }
 

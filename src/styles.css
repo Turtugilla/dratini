@@ -1,8 +1,14 @@
 /* 
 You can add global styles to this file, and also import other style files 
 */
+
+@import "./styles/bootstrap.min.css";
+
 body {
-  margin: 0 !important;
-  background-color: #bbe1fa !important;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 1000px;
+  background-color: whitesmoke !important;
   font-family: "Noto Sans", sans-serif !important;
 }

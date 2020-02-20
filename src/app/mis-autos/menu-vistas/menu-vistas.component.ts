@@ -1,4 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, OnChanges } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "menu-vistas",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./menu-vistas.component.css"]
 })
 export class MenuVistasComponent implements OnInit {
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
 }
